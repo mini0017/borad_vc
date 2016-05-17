@@ -6,12 +6,14 @@ public class BoardModel {
 	private String writer;
 	private String contents;
 	private String ip;
-	private int hit;
+	private int hit = 0;
 	private String regDate;
 	private String modDate;
-	private String pageNum;
-	private String searchType;
-	private String searchText;
+	private String pageNum = "1";
+	private String searchType = "";
+	private String searchText = "";
+	private int listCount = 10;
+	private int pagePerBlock = 10;
 	
 	public BoardModel() { }
 
@@ -102,4 +104,21 @@ public class BoardModel {
 	public void setSearchText(String searchText) {
 		this.searchText = searchText;
 	}
+
+	public int getListCount() {
+		return listCount;
+	}
+
+	public void setListCount(int listCount) {
+		this.listCount = listCount;
+	}
+
+	public int getPagePerBlock() {
+		return pagePerBlock;
+	}
+
+	public void setPagePerBlock(int pagePerBlock) {
+		this.pagePerBlock = pagePerBlock;
+	}
+	
 }
