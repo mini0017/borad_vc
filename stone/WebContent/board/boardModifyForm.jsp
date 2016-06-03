@@ -14,7 +14,7 @@
 		// 데이터베이스 객체 생성
 		Class.forName("com.mysql.jdbc.Driver");
 		conn = DriverManager.getConnection(
-			"jdbc:mysql://127.0.0.1:3306/stone", "root", "admin");
+			"jdbc:mysql://127.0.0.1:3306/stone", "root", "1234");
 		// 게시물 상세 조회 쿼리 실행 
 		pstmt = conn.prepareStatement(
 			"SELECT NUM, SUBJECT, CONTENTS, WRITER, HIT, REG_DATE FROM BOARD "+ 

@@ -14,7 +14,7 @@
 		// 데이터베이스 객체 생성
 		Class.forName("com.mysql.jdbc.Driver");
 		conn = DriverManager.getConnection(
-			"jdbc:mysql://127.0.0.1:3306/stone", "root", "admin");
+			"jdbc:mysql://127.0.0.1:3306/stone", "root", "1234");
 		// 조회수 증가 쿼리 실행
 		pstmt = conn.prepareStatement("UPDATE BOARD SET HIT = HIT + 1 WHERE NUM = ?");
 		pstmt.setString(1, num);
